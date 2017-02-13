@@ -19,7 +19,6 @@ function toDec(str){
 	var result = 0;
 	var arr = str.split("");
 	for(var i = 0; i < arr.length; i++){
-		var temp;
 		if(arr[i] === "4"){
 			result += 3*Math.pow(4, arr.length - 1 - i);
 		} else result += +arr[i]*Math.pow(4, arr.length - 1 - i);
